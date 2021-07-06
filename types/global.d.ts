@@ -1,0 +1,1 @@
+type StatusRequest = "idle" | "loading" | "success" | "failure";
