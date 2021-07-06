@@ -1,0 +1,12 @@
+*, ::after, ::before {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background;
+}
+
+h1 {
+  margin: 0px;
+}

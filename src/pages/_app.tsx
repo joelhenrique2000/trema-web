@@ -1,4 +1,5 @@
 import '../sass/main.scss'
+
 import { makeServer } from "../mirage"
 import withRedux from "next-redux-wrapper";
 import { store } from "../store/index";
