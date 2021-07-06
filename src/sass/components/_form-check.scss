@@ -1,0 +1,16 @@
+.form-check {
+  display: flex;
+  align-items: center;
+
+
+  &__checkbox {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 8px;
+  }
+
+  &__label {
+
+  }
+
+}

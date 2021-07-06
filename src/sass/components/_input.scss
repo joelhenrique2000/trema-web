@@ -1,0 +1,27 @@
+input {
+  &[type='password'],
+  &[type='email'] {
+    padding: 9px 20px;
+    height: 49px;
+  
+    font-size: 14px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-width: 2px;
+    border-radius: 4px;
+  
+    // height: 49px;
+    line-height: 29px;
+    line-height: 2.0714285714em;
+    
+    line-height: 29px;
+    line-height: 2.0714285714rem;
+  }
+}
