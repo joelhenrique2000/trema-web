@@ -1,5 +1,6 @@
 input {
   &[type='password'],
+  &[type='text'],
   &[type='email'] {
     padding: 9px 20px;
     height: 49px;
