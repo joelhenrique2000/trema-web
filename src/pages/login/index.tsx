@@ -20,12 +20,12 @@ export default () => {
             <div>
               <div className="form-group">
                 <div className="form-check">
-                  <input type="checkbox" className="form-check__checkbox" id="keep-logged-in" checked />
-                  <label className="form-check__label" htmlFor="keep-logged-in">Keep me logged in</label>
+                  <input type="checkbox" className="form-check__checkbox" id="keep-logged-in" />
+                  <label className="form-check__label" htmlFor="keep-logged-in">Mantenha-me conectado</label>
                 </div>
               </div>
               <div className="form-group">
-                <a href="resetpw" className="link">Forgotten your password?</a>
+                <a href="resetpw" className="link">Esqueceu a senha?</a>
               </div>
             </div>
             <button type="submit" className="btn btn--block">Log in</button>
