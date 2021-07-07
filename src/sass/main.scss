@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @import
   "../../node_modules/normalize.css/normalize.css";
 
@@ -25,6 +26,10 @@
 
 
 @import
+  "components/all-board",
+  "components/board-group",
+  "components/board-list",
+  "components/board",
   "components/btn",
   "components/divider",
   "components/form-check",
@@ -33,8 +38,10 @@
   "components/input",
   "components/label",
   "components/link",
+  "components/sidebar-home",
   "components/signin-hero",
   "components/signin-section";
 
 @import
+  "pages/home",
   "pages/signin";

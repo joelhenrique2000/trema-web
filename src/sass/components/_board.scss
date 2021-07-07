@@ -1,0 +1,59 @@
+.board {
+  background-image: url('https://source.unsplash.com/480x322/?wallpaper');
+  margin-right: 0;
+  border-radius: 3px;
+  display: block;
+  background-color: #97a0af;
+  background-size: cover;
+  background-position: 50%;
+  color: #fff;
+  line-height: 20px;
+  padding: 8px;
+  position: relative;
+  text-decoration: none;
+  
+  
+  &__fade {
+    background-color: rgba(0,0,0,.3);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 3px;
+    display: block;
+  }
+
+  &__details {
+    display: flex;
+    height: 80px;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__header {
+    flex: 0 0 auto;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+    overflow: hidden;
+    max-height: 40px;
+    width: 100%;
+    word-wrap: break-word;
+
+    div:nth-child(1) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+    }
+  }
+
+  &__footer {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+  }
+
+}

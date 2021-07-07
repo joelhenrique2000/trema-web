@@ -1,0 +1,13 @@
+.home {
+  // background-color: red;
+  min-height: 100vh;
+
+  &__container {
+    // background-color: yellow;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
