@@ -1,6 +1,5 @@
 .signin {
-  background-color: red;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   
@@ -9,7 +8,7 @@
   }
   
   @media (min-width: 768px) { 
-    flex-direction: row;
+    flex-direction: row-reverse;
     
   }
 
