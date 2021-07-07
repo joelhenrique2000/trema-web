@@ -31,22 +31,29 @@
     line-height: 1.6rem;
   }
 
-  @media (min-width: 576px) { 
+  @media (min-width: 576px) {
+    &__header {
+      width: 60%;
+    }
   }
 
   @media (min-width: 768px) { 
+    &__header {
+      width: 60%;
+    }
     flex: 0 0 50%;
     max-width: 50%;
   }
 
   @media (min-width: 992px) { 
-    
   }
 
   @media (min-width: 1200px) { 
-    
-  }
+      }
 
   @media (min-width: 1400px) { 
+    &__header {
+      width: 250px;
+    }
   }
 }
