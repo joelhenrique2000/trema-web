@@ -7,6 +7,46 @@
 @import
   "vendors/rfs";
 
+// Legado
+._modal-close {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   padding: 0.5em;
+  //   line-height: 1;
+    background: #f6f6f7;
+    border: 0;
+    box-shadow: 0;
+    cursor: pointer;
+  }
+  
+._modal-close-icon {
+  width: 64px;
+  height: 25px;
+  fill: transparent;
+  stroke: black;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+._hide-visual {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.scroll-lock {
+  overflow: hidden;
+  margin-right: 17px;
+}
+  
+
 
 // Abstract
 @import
@@ -27,6 +67,8 @@
 
 @import
   "components/all-board",
+  "components//all-requirements-card",
+  "components/board-footer",
   "components/board-group",
   "components/board-list",
   "components/board",
@@ -38,10 +80,19 @@
   "components/input",
   "components/label",
   "components/link",
+  "components/requirement-list",
+  "components/requirements-card-list",
+  "components/requirements-card",
   "components/sidebar-home",
+  "components/sidebar-requirements",
   "components/signin-hero",
+  "components/modal-card",
   "components/signin-section";
+
+// Legado
+@import "pages/lading";
 
 @import
   "pages/home",
+  "pages/requirements",
   "pages/signin";

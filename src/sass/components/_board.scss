@@ -1,5 +1,5 @@
 .board {
-  background-image: url('https://source.unsplash.com/480x322/?wallpaper');
+  // background-image: url('https://source.unsplash.com/480x322/?wallpaper');
   margin-right: 0;
   border-radius: 3px;
   display: block;
@@ -11,10 +11,12 @@
   padding: 8px;
   position: relative;
   text-decoration: none;
-  
+
+  // \/ 
+  padding: 16px;
   
   &__fade {
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.5);
     bottom: 0;
     left: 0;
     position: absolute;
@@ -26,34 +28,41 @@
 
   &__details {
     display: flex;
-    height: 80px;
     position: relative;
     flex-direction: column;
     justify-content: space-between;
+    height: 120px;
+    
+    @media (min-width: 576px) {
+      height: 160px;
+    }
+
+    @media (min-width: 768px) {
+      height: 80px;
+    }
   }
 
-  &__header {
+  &__top {
     flex: 0 0 auto;
-    font-size: 16px;
     font-weight: 700;
     display: inline-block;
     overflow: hidden;
     max-height: 40px;
     width: 100%;
     word-wrap: break-word;
+    @include font-size(32px);
 
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
+    
     div:nth-child(1) {
-      overflow: hidden;
       text-overflow: ellipsis;
-      display: -webkit-box;
+      overflow: hidden;
     }
   }
 
-  &__footer {
-    flex: 0 0 auto;
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-end;
-  }
+  // &__bottom {
 
+  // }
 }

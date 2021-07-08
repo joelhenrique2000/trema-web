@@ -1,11 +1,10 @@
-.home {
+.requirements {
   min-height: 100vh;
-
   &__container {
     min-height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
   }
 } 

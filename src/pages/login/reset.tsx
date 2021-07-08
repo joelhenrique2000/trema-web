@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default () => {
   return (
     <div className="signin">
@@ -12,10 +14,12 @@ export default () => {
               <label className="form-label">Email</label>
               <input type="email" className="form-control" placeholder="Insira o email" id="email" />
             </div>
-            <button type="submit" className="btn btn--block">Envie email de verificação</button>
+            <Link href="/login">
+              <button type="submit" className="btn btn--block">Envie email de verificação</button>
+            </Link>
           </form>
           <div className="divider"></div>
-            <p className="signin-section__without-account"><a href="" className="link">Volte para página de login</a></p>
+            <p className="signin-section__without-account"><a href="/login" className="link">Volte para página de login</a></p>
           </div>
       </div>
       <div className="signin-hero">

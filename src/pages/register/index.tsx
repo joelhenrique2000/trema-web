@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default () => {
   return (
     <div className="signin">
@@ -29,10 +31,12 @@ export default () => {
                 </div>
               </div>
             </div>
-            <button type="submit" className="btn btn--block">Criar conta</button>
+            <Link href="/login">
+              <button type="submit" className="btn btn--block">Criar conta</button>
+            </Link>
           </form>
           <div className="divider"></div>
-            <p className="signin-section__without-account">Já tem uma conta? <a href="" className="link">Faça o login</a></p>
+            <p className="signin-section__without-account">Já tem uma conta? <a href="/login" className="link">Faça o login</a></p>
           </div>
       </div>
       <div className="signin-hero">

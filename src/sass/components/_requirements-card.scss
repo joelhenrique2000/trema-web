@@ -1,0 +1,29 @@
+.requirements-card {
+  background-color: white;
+  height: 60px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+
+  &__check {
+    margin-right: 8px;
+  }
+
+  &__content {
+    display: flex;
+    // width: 100%;
+    flex-grow: 1;
+  }
+
+  &__ref {
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  &__title {
+    margin-right: 8px;
+    display: flex;
+    flex-grow: 1;
+  }
+}

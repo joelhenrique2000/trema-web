@@ -1,0 +1,16 @@
+.requirement-list {
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    height: 40px;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    cursor: pointer;
+
+    &:hover {
+      background-color: #a47cdf1f;
+      color: $primary;
+    }
+  }
+}
