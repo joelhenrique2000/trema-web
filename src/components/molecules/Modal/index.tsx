@@ -36,7 +36,9 @@ const Modal: React.FC<ModalProps> = ({ triggerButtonRef, children }) => {
     }
   }
 
+  // @ts-ignore
   const onClickOutside = (evt) => {
+    // @ts-ignore
     if (modalRef.current && modalRef.current.contains(evt.target)) return;
     closeModal();
   }
