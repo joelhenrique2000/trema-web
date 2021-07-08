@@ -10,6 +10,8 @@ const sagaMiddleware = createSagaMiddleware();
 /**
  * @param initialState The store's initial state (on the client side, the state of the server-side store is passed here)
  */
+
+    // @ts-ignore
  const store: MakeStore = (initialState, options): Store => {
   const store: Store = configureStore({
     reducer,

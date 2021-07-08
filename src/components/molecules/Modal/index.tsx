@@ -30,6 +30,7 @@ const Modal: React.FC<ModalProps> = ({ triggerButtonRef, children }) => {
     disableScrollLock();
   }
 
+    // @ts-ignore
   const onKeyDown = (evt) => {
     if (evt.keyCode === 27) {
       closeModal();
@@ -68,6 +69,7 @@ const Modal: React.FC<ModalProps> = ({ triggerButtonRef, children }) => {
                 <div className="modal-card__header">
                   <span className="modal-card__header-title typo typo__headline-6">Lorem ipsum</span>
                   <button
+    // @ts-ignore
                     ref={closeButton}
                     aria-label="Close Modal"
                     aria-labelledby="close-modal"
