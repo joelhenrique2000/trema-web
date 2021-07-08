@@ -1,11 +1,14 @@
-.sidebar-home {
-  // background-color: red;
+.sidebar-requirements {
+  background-color: #fff;
+  border-right: 1px solid rgb(219, 219, 219);
   position: sticky;
   top: 0px;
+  min-height: calc(100vh);
+  height: auto;
+  max-height: 100vh;
+  overflow-y: auto;
 
   &__container {
-    margin: 40px 0 0;
-    padding: 0 16px;
     width: 240px;
   }
 

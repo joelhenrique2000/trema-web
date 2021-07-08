@@ -1,0 +1,19 @@
+.requirements-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  @media (min-width: 576px) {
+  }
+
+  &__item {
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 16px;
+    box-shadow: 0px 4px 4px 0px #b9b9b973;
+  }
+} 

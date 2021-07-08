@@ -1,0 +1,22 @@
+.board-footer {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  // &__title {
+
+  // }
+
+  &__icon {
+    span {
+      &:not(:last-child) {
+        margin-right: 18px;
+      }
+    }
+  }
+
+  @media (min-width: 576px) { 
+    
+  }
+}
