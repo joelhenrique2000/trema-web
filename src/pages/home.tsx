@@ -11,6 +11,50 @@ export default () => {
   const buttonModalRef = useRef(null);
 
   return (
+    <div className="container">
+      <div className="grid grid-cols-1 gap-2">
+        <div className="bg-red-300 hidden">s</div>
+        <div className="bg-blue-400">
+          <AllBoard> 
+            <BoardGroup>
+              <BoardGroupHeader
+                title="Quadros com Estrelas"
+              />
+              <BoardGroupContent
+                data={[]}
+              />
+            </BoardGroup>
+            <BoardGroup>
+              <BoardGroupHeader
+                title="Quadros com Estrelas"
+              />
+              <BoardGroupContent
+                data={[]}
+              />
+            </BoardGroup>
+            <BoardGroup>
+              <BoardGroupHeader
+                title="Quadros com Estrelas"
+              />
+              <BoardGroupContent
+                data={[]}
+              />
+            </BoardGroup>
+            <BoardGroup>
+              <BoardGroupHeader
+                title="Quadros com Estrelas"
+              />
+              <BoardGroupContent
+                data={[]}
+              />
+            </BoardGroup>
+          </AllBoard>
+        </div>
+      </div>
+    </div>
+  )
+
+  return (
     <div className="home">
       <Header />
       

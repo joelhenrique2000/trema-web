@@ -4,7 +4,7 @@ type BoardItemProps = {
 
 const BoardItem: React.FC<BoardItemProps> = ({ children }) => {
   return (
-    <li className="board-list__item">
+    <li className="box-border relative cursor-pointer w-full mb-4">
       {children}
     </li>
   );

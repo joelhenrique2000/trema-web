@@ -9,13 +9,14 @@ type BoardGroupHeaderProps = {
 
 const BoardGroupHeader: React.FC<BoardGroupHeaderProps> = ({ data, children }) => {
   return (
-    <div className="board-group__content">
+    <div>
+       {/* className="board-group__content"> */}
       <BoardList>
         {Array(9).fill(0).map((item, index) => {
           return (
             <BoardItem>
               <Board
-                title="Requisitos"
+                title="Reqddddddd ddddddddddddd ddddddddddddd dddddddddd duisitos"
                 picture={`https://source.unsplash.com/480x32${index}/?wallpaper`}
                 onDetails={() => {}}
                 onHighlights={() => {}}

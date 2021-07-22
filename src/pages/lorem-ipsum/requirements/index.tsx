@@ -1,6 +1,21 @@
+import axios from 'axios';
+import { format, isToday } from 'date-fns';
+import { useState } from 'react';
+import { useEffect } from 'react';
 import Header from '../../../components/organisms/Header'
 
-export default () => {
+const Page = ({ data }) => {
+
+  const [requirements, setRequirements] = useState([]);
+
+  useEffect(() => {
+    axios.get("/api/requirements")
+      .then((res) => res.data)
+      .then((json) => {
+        setRequirements(json.requirements)
+      })
+  }, [])
+
   return (
     <div className="requirements">
       <Header />
@@ -26,7 +41,7 @@ export default () => {
         <div className="all-requirements-card">
           <div className="all-requirements-card__container">
             <ul className="requirements-card-list">
-              {Array(30).fill(1).map((value, index) => {
+              {requirements.map((value, index) => {
                 return (
                   <li className="requirements-card-list__item">
                     <div className="requirements-card">
@@ -37,9 +52,9 @@ export default () => {
                       </div>
                       <div className="requirements-card__content">
                         <div className="requirements-card__ref">{`${index+1}.`}</div>
-                        <div className="requirements-card__title">{`Requisito funcional ${index+1}`}</div>
+                        <div className="requirements-card__title">{`${value.description}`}</div>
                       </div>
-                      <div className="requirements-card__date">Hoje</div>
+                      <div className="requirements-card__date">{isToday(new Date(value.date)) ? 'Hoje' : format(new Date(value.date), "dd/MM/yyyy à's' HH:mm")}</div>
                     </div>
                   </li>
                 )
@@ -51,3 +66,5 @@ export default () => {
     </div>
   )
 }
+
+export default Page

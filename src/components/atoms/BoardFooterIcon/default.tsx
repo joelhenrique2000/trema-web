@@ -1,7 +1,7 @@
 const BoardFooterIcon = () => {
   return (
     <div>
-      <div className="board-footer__icon">
+      <div>
         <span>V</span>
         <span>S</span>
       </div>

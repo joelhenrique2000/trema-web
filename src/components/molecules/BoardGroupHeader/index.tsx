@@ -4,8 +4,8 @@ type BoardGroupHeaderProps = {
 
 const BoardGroupHeader: React.FC<BoardGroupHeaderProps> = ({ title }) => {
   return (
-    <div className="board-group__header">
-      <div className="board-group__title">
+    <div className="mb-4">
+      <div className="flex items-center justify-between">
         {/* <div>icdon</div> */}
         <h3>{title}</h3>
       </div>

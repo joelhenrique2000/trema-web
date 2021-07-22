@@ -1,4 +1,5 @@
 import '../sass/main.scss'
+import 'tailwindcss/dist/tailwind.css'
 
 import { makeServer } from "../mirage"
 import withRedux from "next-redux-wrapper";
